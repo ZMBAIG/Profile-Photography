@@ -1,0 +1,66 @@
+body {
+  background: rgb(156, 156, 195);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#description,
+h1 {
+  text-align: center;
+  color: white;
+}
+
+form {
+  background: rgb(84, 84, 112);
+  width: 45%;
+  padding: 20px;
+  color: white;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+#name,
+#email,
+#age,
+#role,
+#dropdown {
+  width: 95%;
+  color: rgb(112, 109, 109);
+  padding: 6px;
+  border-radius: 5px;
+}
+#submit {
+  background: rgb(54, 176, 125);
+  padding: 8px;
+  width: 100%;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+#submit:hover {
+  background: rgb(20, 63, 45);
+  color: white;
+  cursor: pointer;
+}
+textarea {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: -25px;
+}
+li {
+  list-style: none;
+}
+
+.footer {
+  text-align: center;
+  padding: 2em 0;
+}
+
+@media (max-width: 300px) {
+  .section,
+  image {
+    flex-direction: row;
+    width: 100%;
+    /* height: 500px; */
+    font-size: 50%;
+  }
+}

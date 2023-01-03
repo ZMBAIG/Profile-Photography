@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Contact</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Alex Brush"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/style-files/contact.css" />
+  </head>
+  <body>
+    <section class="section">
+      <h1 id="title">Baig Photography</h1>
+
+      <!-------------------------------------------------->
+      <form id="survey-form" action="/action_page.php" method="get">
+        <label id="name-label">Name</label><br />
+        <input
+          id="name"
+          type="text"
+          placeholder="Enter your name"
+          required
+        /><br />
+        <label id="phone">Mobile No.</label><br />
+        <input
+          id="name"
+          type="tel"
+          placeholder="Enter your phone"
+          required
+        /><br />
+        <label id="email-label">Email</label><br />
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter your Email"
+          required
+        /><br />
+        <label id="age-label">Age(optional)</label><br />
+        <input
+          id="number"
+          type="number"
+          placeholder="Age"
+          min="10"
+          max="100"
+        /><br />
+        <!------------------------------------------------->
+        <p>Which option best describes your current role?</p>
+        <select name="role" id="role">
+          <optgroup id="current" label="Select current role">
+            <option value="student">Student</option>
+            <option value="full-job">Full Time Job</option>
+            <option value="full-lerner">Full Time Learner</option>
+            <option value="prefer">Prefer not to say</option>
+            <option value="other">Other</option>
+          </optgroup></select
+        ><br />
+        <!------------------------------------------------->
+        <p>Would you recommend "Baig Photography" to a friend?</p>
+        <li>
+          <input
+            type="radio"
+            id="definitely"
+            name="recommend"
+            value="Definitely"
+          /><label for="definitely">Definitely</label>
+        </li>
+        <li>
+          <input
+            type="radio"
+            id="maybe"
+            name="recommend"
+            value="May be"
+          /><label for="maybe">Maybe</label>
+        </li>
+
+        <li>
+          <input
+            type="radio"
+            id="not-sure"
+            name="recommend"
+            value="Not sure"
+          /><label for="not-sure">Not sure</label>
+        </li>
+        <!------------------------------------------------->
+        <p>What is your favorite Photography?</p>
+        <select name="Select an option" id="dropdown">
+          <optgroup id="favorite" label="Select an option">
+            <option value="challenges">Landscape</option>
+            <option value="projects">Humans</option>
+            <option value="community">Animals</option>
+            <option value="open-source">Flowers</option>
+          </optgroup></select
+        ><br /><br />
+        <!------------------------------------------------->
+        <p>
+          Where would you like to visit in the Europe? (Check more than one)
+        </p>
+        <input
+          type="checkbox"
+          id="netherlands"
+          name="Front-end Projects"
+          value="Front-end Projects"
+        />
+        <label for="front-end">Netherlands</label><br />
+        <input
+          type="checkbox"
+          id="switzerland"
+          name="Back-end Projects"
+          value="Back-end Projects"
+        />
+        <label for="swiss"> Switzerland</label><br />
+        <input
+          type="checkbox"
+          id="france"
+          name="Data Visualization"
+          value="Data Visualization"
+        />
+        <label for="france"> France</label><br /><input
+          type="checkbox"
+          id="germany"
+          name="Challenges"
+          value="Challenges"
+        />
+        <label for="germany"> Germany</label><br /><input
+          type="checkbox"
+          id="england"
+          name="Open Source Community"
+          value="Open Source Community"
+        />
+        <label for="england">England</label>
+        <!------------------------------------------------->
+        <p>Any comments or suggestions?</p>
+        <textarea
+          id="text-area"
+          rows="8"
+          cols="50"
+          name="comment"
+          form="survey-form"
+          value="survey"
+        >
+  Enter your suggestion here...
+        </textarea
+        ><br /><br /><br />
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+      <footer class="footer">
+        © <span class="logo">Baig</span> 2021 @ Copy right ZMBAIG
+      </footer>
+    </section>
+  </body>
+</html>
